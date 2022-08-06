@@ -28,6 +28,7 @@ city | String
 state | String
 cuisines | String
 pic | string
+
 rants
 Field | Type
 ----- | ----
