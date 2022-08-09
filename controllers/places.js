@@ -7,6 +7,7 @@ router.get('/', (req, res) => {
         state: 'WA',
         cuisines: 'Breakfast, Pancakes',
         pic: '/images/pancakes.jpg'
+  
       }, {
         name: 'Kikn Kabobs',
         city: 'Phoenix',
@@ -16,6 +17,11 @@ router.get('/', (req, res) => {
       }]
       
     res.render('places/index', {places})
+    
+})
+
+router.get('/new', (req, res) => {
+  res.render('places/new')
 })
 
 module.exports = router
